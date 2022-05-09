@@ -1,0 +1,112 @@
+/* Importation de la police Montserrat */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;500&display=swap');
+/* font-family: 'Montserrat', sans-serif; */
+
+/* Importation de la police Yeseva One */
+@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
+/* font-family: 'Yeseva One', cursive; */
+
+:root{
+    --background:#041821;
+    --primary:#1BD79E;
+    --paragraph:#808080;
+    --border:#E5E5E5;
+    --font-color: #ffffff ;
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    background-color: var(--background);
+    color: var(--font-color);
+}
+span{
+    color: var(--primary);
+}
+header{
+    position: sticky;
+    top: 0;
+    left:0;
+    background-color: var(--background);
+    text-align: center;
+    padding: 40px 60px;
+    border-bottom: 0.5px solid #ffffff15;
+    font-family: 'Yeseva One', cursive;
+}
+header h1{
+    font-size: 24px;
+}
+nav i{
+    padding: 0.6rem;
+}
+main{
+    padding: 1.9rem;
+    overflow: hidden;
+}
+aside h1{
+    font-size: 32px;
+    font-family: 'Yeseva One', cursive;
+}
+aside p{
+    color: var(--paragraph);
+    padding: 15px 0;
+    font-weight: 100;
+}
+
+main nav{
+    display: flex;
+    align-items: center;
+    overflow-x: scroll;
+}
+
+main nav::-webkit-scrollbar{
+    display: none;
+}
+
+nav button{
+    background-color: var(--background);
+    color: var(--font-color);
+    border: none;
+    margin: 20px 15px 15px 0;
+    padding: 5px;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+nav button:active{
+    background-color: var(--primary);
+}
+
+section{
+    display: grid;
+    grid-template-rows: repeat(	3, 1fr);
+    grid-template-columns: repeat(	3, 1fr);
+    grid-gap: 15px;
+}
+section img{
+    width: 100%;
+}
+
+footer{
+    text-align: center;
+    padding: 40px;
+}
+
+footer p{
+    font-size: 10px;
+    font-weight: 100;
+    letter-spacing: 2px;
+}
+
+footer  p:first-child{
+    font-size: 12px;
+    font-weight: 500;
+    padding-bottom: 15px;
+}
