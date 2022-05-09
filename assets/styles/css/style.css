@@ -88,7 +88,7 @@ section{
     display: grid;
     grid-template-rows: repeat(	3, 1fr);
     grid-template-columns: repeat(	3, 1fr);
-    grid-gap: 15px;
+    grid-gap: 10px;
 }
 section img{
     width: 100%;
@@ -109,4 +109,32 @@ footer  p:first-child{
     font-size: 12px;
     font-weight: 500;
     padding-bottom: 15px;
+}
+
+@media screen and (min-width: 768px){
+    header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+    }
+    aside h1{
+        font-size: 48px;
+    }
+    aside p{
+        font-size: 20px;
+    }
+    nav button{
+        font-size: 14px;
+    }
+    main{
+        padding: 40px 80px;
+    }
+    main nav{
+        justify-content: center;
+    }
+    section{
+        grid-template-columns: repeat(5,1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
 }
